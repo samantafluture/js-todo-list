@@ -1,1 +1,1 @@
-# 1823_DOM# js-todo-list
+# To Do's App in Vanilla JS
