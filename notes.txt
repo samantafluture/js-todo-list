@@ -17,13 +17,19 @@ DOM
 - dentro do document tem todas as tags html 
 - é um formato de árvore
 
-
 DATA ATTRIBUTES
 ===============
-
 - adicionar quando quiser usar para js
 - para selecionar no querySellector('[]')
 - sempre que for utilizar e alterar um elemento com js, utilizar data atributos
+- não é boa prática mexer no js de um elemento com classes
+- classes sem estilos não são boa prática
+- data-atributos separam lógica do js do estilo visual da classe css
+- ex: data-conteudo="cadastrar"
+- sendo que "cadastrar" é um valor
+- é semântico, tem a ver com lógica js só de bater o olho
+- o valor não é obrigatório
+- dataset => objeto que vem com chave/valor de todos os data atributos que temos gravados
 
 EVENT
 =====
@@ -70,4 +76,11 @@ EXPORT
 IMPORT
 - antes de tudo no código principal
 - import nome-do-componente from 'arquivo.js'
+- quando quero importar apenas uma função de um arquivo, coloco ela {}
+
+INDEXOF
+=======
+- método que retorna o primeiro índice em que o elemento pode ser encontrado no array
+- retorna -1 caso não esteja presente
+
 
