@@ -1,0 +1,73 @@
+=================
+MANIPULANDO O DOM
+=================
+
+DOM
+===
+- tudo o que temos no htlm o browser cria um objeto
+- representa nosso html em objetos
+- objeto document aponta para página atual
+- através dele que conseguimos acessar obejtos do nosso projeto
+- querySellector percorre o DOM e encontra o primeiro elemento com o valor que desejamos
+- textContent altera o conteúdo de texto interno
+- DOM representa o arquivo html em formato de nós
+- cada tag html é um nó
+- DOM possui o objeto window que representa minha janela do browser
+- document represente a página html atual
+- dentro do document tem todas as tags html 
+- é um formato de árvore
+
+
+DATA ATTRIBUTES
+===============
+
+- adicionar quando quiser usar para js
+- para selecionar no querySellector('[]')
+- sempre que for utilizar e alterar um elemento com js, utilizar data atributos
+
+EVENT
+=====
+- toda vez que escutamos um evento, este método vem com um objeto "event"
+- "event" tem todas as infos do evento
+- podemos passá-lo como parâmetro
+- event.preventDefault(); retira o refresh da página
+- neste caso, previne o comportamento do form de enviar o dado para algum lugar
+- forçou o form a fazer o que estamos querendo
+- event.target => o alvo do evento, em quem eu cliquei?
+
+CREATE & ADD ELEMENTS
+=====================
+- appendChild sempre coloca o elemento após o nó, em ordem
+- vai sempre aparecer por último na lista
+- outros métodos:
+    .insertBefore(pai, filho) -> coloca um nó antes do outro
+    .replaceChild(elemento1, elemento2) -> substitui o nó elemento 1 pelo nó elemento 2
+    .removeChild(elemento) -> remove um nó da árvore
+- elementos criados com letra maiúscula -> componentes
+
+RETURN
+======
+- pra poder usar um elemento dentro de outra função de outro escopo
+- na função que o estou manipulando, eu dou return "nome do elemento" no fim de tudo
+
+IIFE / FUNÇÃO DE EXECUÇÃO IMEDIATA
+==================================
+- colocar tudo dentro do escopo de uma função para ninguém poder acessar
+(() => {
+})();
+
+EXPORT / IMPORT
+===============
+
+EXPORT
+- export defaul nome-do-componente
+- se é mais de um:
+    export {
+        nome-do-componente, nome-do-outro
+    }
+- ou colocar export na frente das funções que deseja exportar
+
+IMPORT
+- antes de tudo no código principal
+- import nome-do-componente from 'arquivo.js'
+
